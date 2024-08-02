@@ -290,7 +290,7 @@
                     },
                     gmaps: {
                       index: '//maps.google.',
-                      src: '%id%&output=embed'
+                      src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.3276754406656!2d37.5174492!3d55.8222716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5482f37c3d68b%3A0x9beaf1530a466361!2z0JfQvtC4INC4INCQ0LvQtdC60YHQsNC90LTRgNCwINCa0L7RgdC80L7QtNC10LzRjNGP0L3RgdC60LjRhSDRg9C7LiwgMjYsINCc0L7RgdC60LLQsCwgMTI1MTMw!5e0!3m2!1sru!2sru!4v1718123700552!5m2!1sru!2sru"
                     }
                 },
 
@@ -306,10 +306,10 @@
 
         //Google Maps
         $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
+            zoom: 20 // Google Map ZOOM. You can change this value
         });
         $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
+            address: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.3276754406656!2d37.5174492!3d55.8222716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5482f37c3d68b%3A0x9beaf1530a466361!2z0JfQvtC4INC4INCQ0LvQtdC60YHQsNC90LTRgNCwINCa0L7RgdC80L7QtNC10LzRjNGP0L3RgdC60LjRhSDRg9C7LiwgMjYsINCc0L7RgdC60LLQsCwgMTI1MTMw!5e0!3m2!1sru!2sru!4v1718123700552!5m2!1sru!2sru" // Your Address. Change it
         });
     });
 
