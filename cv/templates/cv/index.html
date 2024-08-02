@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 
 
-    <link rel="stylesheet" href="{% static 'cv/css/reset.css'}" type="text/css">
+    <link rel="stylesheet" href="{% static '/cv/css/reset.css'}" type="text/css">
     <link rel="stylesheet" href="{% static 'cv/css/bootstrap-grid.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'cv/css/animations.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'cv/css/perfect-scrollbar.css' %}" type="text/css">
@@ -23,7 +23,7 @@
 
   <body>
     <!-- Animated Background -->
-    <div class="lm-animated-bg" style="background-image: url(cv/img/main_bg.png);"></div>
+    <div class="lm-animated-bg" style="background-image: url(/static/cv/img/main_bg.png);"></div>
     <!-- /Animated Background -->
 
     <!-- Loading animation -->
@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li>
-                <a href="#blog" class="nav-anim">
+                <a href="#useful" class="nav-anim">
                   <span class="menu-icon lnr lnr-book"></span>
                   <span class="link-text">Полезное</span>
                 </a>
@@ -127,7 +127,7 @@
                     <div class="row">
                       <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="title-block">
-                          <h2>Антон Кузнецов</h2>
+                          <h2>Кузнецов Антон</h2>
                           <div class="owl-carousel text-rotation">                                    
                             <div class="item">
                               <div class="sp-subtitle">Python developer</div>
@@ -510,7 +510,7 @@
                           <div class="right-part">
                             <h4 class="item-title">___</h4>
                             <p>Бизнес в сфере автоматизации и оптимизации рабочих процессов
-                              в операционном управлении финансами.</p>
+                              в операционном управлении рисками и финансами.</p>
                           </div>
                         </div>
 
@@ -635,7 +635,7 @@
 
                             <i class="far fa-file-alt"></i>
                             <h4 class="name">Hikingapp.ru</h4>
-                            <span class="category">Detailed</span>
+                            <span class="category">Web</span>
                           </figure>
 
                           <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
@@ -646,7 +646,7 @@
 
                             <i class="far fa-file-alt"></i>
                             <h4 class="name">Банковские гарантии для бизнеса</h4>
-                            <span class="category">Detailed</span>
+                            <span class="category">Web</span>
                           </figure>
 
                         </div>
@@ -659,7 +659,8 @@
               <!-- End of Portfolio Subpage -->
 
               <!-- Blog Subpage -->
-              <section data-id="blog" class="animated-section">
+
+              <section data-id="useful" class="animated-section">
                 <div class="section-content">
                   <div class="page-title">
                     <h2>Полезное</h2>
@@ -667,103 +668,88 @@
 
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
-                      <div class="blog-masonry two-columns clearfix">
+                      <!-- Portfolio Content -->
+                      <div class="portfolio-content">
 
-                        <!-- Blog Post 1 -->
-                        <div class="item post-1">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in Design">Design</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src="/static/cv/img/blog/blog_post_1.jpg" class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">05 Mar 2020</div>
-                              <a href="/static/cv/blog-post-1.html">
-                                <h4 class="blog-item-title">Why I Switched to Sketch For UI Design</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 1 -->
+                        <ul class="portfolio-filters">
+                          <li class="active">
+                            <a class="filter btn btn-sm btn-link" data-group="category_all">Все</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_web">Web</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_server">Server</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_windows">Windows</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_linux">Linux</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_docker">Docker</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_english">English</a>
+                          </li>
 
-                        <!-- Blog Post 2 -->
-                        <div class="item post-2">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in UI">UI</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src="img/blog/blog_post_2.jpg" class="size-blog-masonry-image-two-c" alt="Best Practices for Animated Progress Indicators" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">23 Feb 2020</div>
-                              <a href="blog-post-1.html">
-                                <h4 class="blog-item-title">Best Practices for Animated Progress Indicators</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 2 -->
+                        </ul>
 
-                        <!-- Blog Post 3 -->
-                        <div class="item post-1">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in Design">Design</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src="img/blog/blog_post_3.jpg" class="size-blog-masonry-image-two-c" alt="Designing the Perfect Feature Comparison Table" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Feb 2020</div>
-                              <a href="blog-post-1.html">
-                                <h4 class="blog-item-title">Designing the Perfect Feature Comparison Table</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 3 -->
+                        <!-- Posts Grid -->
+                        <div class="portfolio-grid three-columns">
 
-                        <!-- Blog Post 4 -->
-                        <div class="item post-2">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in E-Commerce">UI</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src="img/blog/blog_post_4.jpg" class="size-blog-masonry-image-two-c" alt="An Overview of E-Commerce Platforms" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">07 Jan 2020</div>
-                              <a href="blog-post-1.html">
-                                <h4 class="blog-item-title">An Overview of E-Commerce Platforms</h4>
-                              </a>
-                            </div>
-                          </div>
+                          <figure class="item standard" data-groups='["category_all", "category_server"]'>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Первоначальная настройка сервера</h4 >
+                            <a href="/static/cv/post-1.html" class="ajax-page-load"></a>
+                            <span class="category">Server</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_docker"]'>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Настройка докера</h4>
+                            <a href="/static/cv/post-2.html" class="ajax-page-load"></a>
+                            <span class="category">Docker</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_windows"]'>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Устранение неполадок CHCP</h4>
+                            <a href="/static/cv/post-3.html" class="ajax-page-load"></a>
+                            <span class="category">Windows</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_server"]'>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Настройка Fail2ban</h4>
+                            <a href="/static/cv/post-4.html" class="ajax-page-load"></a>
+                            <span class="category">Server</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_english"]'>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">English for programming vol.1</h4>
+                            <a href="/static/cv/post-5.html" class="ajax-page-load"></a>
+                            <span class="category">English</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_windows"]'>
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Указываем PATH в Windows 10</h4>
+                            <a href="/static/cv/post-5.html" class="ajax-page-load"></a>
+                            <span class="category">Windows</span>
+                          </figure>
+
                         </div>
-                        <!-- End of Blog Post 4 -->
                       </div>
+                      <!-- End of Portfolio Content -->
                     </div>
                   </div>
                 </div>
-
-
               </section>
-              <!-- End of Blog Subpage -->
+
+
 
               <!-- Contact Subpage -->
               <section data-id="contact" class="animated-section">
