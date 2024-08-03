@@ -1,0 +1,73 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Оставьте сообщение </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Заполните форму</h3>
+                    </div>
+
+                    <form id="contact_form" class="contact-form" action="" method="post">
+
+                        <div class="messages"></div>
+
+                        <div class="controls two-columns">
+                          <div class="fields clearfix">
+                            <div class="left-column">
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Name is required.">
+                                <label>Имя</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                                <label>Email</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+
+                              <div class="form-group form-group-with-icon">
+                                <input id="form_subject" type="text" name="subject" class="form-control" placeholder="" required="required" data-error="Subject is required.">
+                                <label>Предмет обращения</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                            <div class="right-column">
+                              <div class="form-group form-group-with-icon">
+                                <textarea id="form_message" name="message" class="form-control" placeholder="" rows="7" required="required" data-error="Please, leave me a message."></textarea>
+                                <label>Сообщение</label>
+                                <div class="form-control-border"></div>
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="lm-info-block gray-default">
+                            <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
+                            <span class="lm-info-block-value"></span>
+                            <span class="lm-info-block-text"></span>
+                          </div>
+                          <input type="submit" class="button btn-send" value="Отправить">
+                        </div>
+                      </form>
+                    </div>
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>

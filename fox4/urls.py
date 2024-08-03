@@ -18,12 +18,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-from cv.views import ShowCV
+from cv.views import ShowCV, FormCV
 from fox4 import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ShowCV.as_view()),
+    path('contact-form/', FormCV.as_view()),
 ]
 
 if settings.DEBUG:
