@@ -1,0 +1,108 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="/static/cv/post-e-3.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="/static/cv/post-s-2.html"><i class="lnr lnr-chevron-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Первоначальная настройка сервера Ubuntu 22.04 LTS</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Первоначальная настройка сервера</h3>
+                    </div>
+
+
+                    <p class="text-justify">
+                        Заходим на сервер из под root</br>
+                        ssh root@______</br>
+                        </br>
+                        Сперва проверяем существующих</br>
+                        cat /etc/passwd</br>
+                        </br>
+                        Если есть сервисный юзер установленый хостером, на 1000 слоте, можно его удалить</br>
+                        sudo deluser --remove-all-files (__имя_сервисного_user__)</br>
+                        </br>
+                        Создаём своего user'a</br>
+                        adduser (__new_user__)</br>
+                        Заполняем необходимые данные и подтверждаем создание нового user'a </br>
+                        </br>
+                        и даем ему права sudo</br>
+                        usermod -aG sudo (__new_user__)</br>
+                        </br>
+                        Выходим с сервера из под root</br>
+                        exit</br>
+                        </br>
+                        Заходим на сервер c созданным пользователем</br>
+                        ssh (__new_user__)@______</br>
+                        </br>
+                        --------------------------</br>
+                        </br>
+                        Установка VIM если необходимо</br>
+                        sudo apt install vim</br>
+                        </br>
+                        --------------------------</br>
+                        </br>
+                        Настраиваем доступ по SSH</br>
+                        ssh-keygen</br>
+                        echo public_key_string >> ~/.ssh/authorized_keys</br>
+                        </br>
+                        cd .ssh</br>
+                        vim authorized_keys</br>
+                        Заменяем public_key_string на public_key</br>
+                        </br>
+                        Проверяем:</br>
+                        ssh (__new_user__)@______</br>
+                        Должен зайти без пароля</br>
+                        </br>
+                        Изменяем конфиг - отключаем возможность доступа из под root и с помощью пароля</br>
+                        sudo vim /etc/ssh/sshd_config</br>
+                        </br>
+                        PermitRootLogin no</br>
+                        PasswordAuthentication no</br>
+                        </br>
+                        Перезагружаем ssh сервис для применения изменений</br>
+                        sudo systemctl restart ssh</br>
+                        </br>
+                        --------------------------</br>
+                        </br>
+                        Первоначальная настройка закончена, не забудьте установить fail2ban</br>
+                        </br>
+
+
+                    </p>
+                    <!-- /Project Description -->
+
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Тэги</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a>ssh</a></li>
+                            <li><a>ubuntu</a></li>
+                            <li><a>linux</a></li>
+                            <li><a>server</a></li>
+                            <li><a>public key</a></li>
+                            <li><a>settings</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Technology -->
+
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>

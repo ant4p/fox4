@@ -1,0 +1,73 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="/static/cv/post-s-1.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="/static/cv/post-d-1.html"><i class="lnr lnr-chevron-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Установка и устранение проблем Fail2ban на Ubuntu 22.04 LTS</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Fail2ban</h3>
+                    </div>
+
+                    <p class="text-justify">
+
+                        Установка fail2ban:</br>
+                        </br>
+                        sudo apt update</br>
+                        sudo apt upgrade</br>
+                        </br>
+                        sudo apt install fail2ban</br>
+                        </br>
+                        С версии 20.04 LTS в Ubuntu необходимо немного изменить конфигурационный файл, чтобы fail2ban
+                        запустился:</br>
+                        </br>
+                        sudo vim /etc/fail2ban/jail.d/defaults-debian.conf</br>
+                        В записи [sshd] добавляем строку:</br>
+                        backend = systemd</br>
+                        </br>
+                        sudo systemctl start fail2ban</br>
+                        </br>
+                        Для проверки:</br>
+                        sudo systemctl status fail2ban</br>
+                        </br>
+                        Первоначально в fail2ban уже стоят необходимые настройки безопасности. Отдельно можно не конфигурировать.</br>
+                        </br>
+
+                    </p>
+                    <!-- /Project Description -->
+
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Тэги</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a>ssh</a></li>
+                            <li><a>ubuntu</a></li>
+                            <li><a>linux</a></li>
+                            <li><a>server</a></li>
+                            <li><a>fail2ban</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Technology -->
+
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>

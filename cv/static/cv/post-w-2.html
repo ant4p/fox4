@@ -2,8 +2,8 @@
     <div class="ajax-page-wrapper">
         <div class="ajax-page-nav">
             <div class="nav-item ajax-page-prev-next">
-                <a class="ajax-page-load" href="/static/cv/post-5.html"><i class="lnr lnr-chevron-left"></i></a>
-                <a class="ajax-page-load" href="/static/cv/post-1.html"><i class="lnr lnr-chevron-right"></i></a>
+                <a class="ajax-page-load" href="/static/cv/post-w-1.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="/static/cv/post-e-1.html"><i class="lnr lnr-chevron-right"></i></a>
             </div>
             <div class="nav-item ajax-page-close-button">
                 <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
@@ -11,7 +11,7 @@
         </div>
 
         <div class="ajax-page-title">
-            <h1>Указываем PATH в Windows 10</h1>
+            <h1>Устранение неполадок CHCP</h1>
         </div>
 
         <div class="row">
@@ -20,22 +20,15 @@
                 <!-- Project Description -->
                 <div class="project-description">
                     <div class="block-title">
-                        <h3>Windows</h3>
+                        <h3>Windows CHCP</h3>
                     </div>
 
-                    <p class="text-justify">Чтобы прописать PATH в Windows 10 надо:</br>
-                        START</br>
-                        SETTINGS</br>
-                        System</br>
-                        About program</br>
-                        В левой части:</br>
-                        Advanced system settings</br>
-                        Advanced</br>
-                        Virtual environments</br>
-                        В открывшемся окне находим строку Path</br>
-                        Change</br>
-                        Create</br>
-                        </p>
+                    <p class="text-justify">При использовании PostgreSQL на машинах с Windows 10, могут возникать проблемы
+                        в отображении символов в терминале. Для устранения попробуйте ввести в терминале:</br>
+                        </br>
+                        chcp 1251</br>
+                        </br>
+                        и перезагрузить терминал.</p>
                     <!-- /Project Description -->
 
                     <!-- Technology -->
@@ -50,7 +43,6 @@
                             <li><a>Syntax</a></li>
                             <li><a>Code</a></li>
                             <li><a>PostgreSQL</a></li>
-                            <li><a>PostgreSQL2</a></li>
                         </ul>
                     </div>
                     <!-- /Technology -->

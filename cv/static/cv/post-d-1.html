@@ -1,0 +1,82 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="/static/cv/post-s-2.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="/static/cv/post-d-2.html"><i class="lnr lnr-chevron-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Установка и настройка Docker и Docker Compose на Ubuntu 22.04 LTS</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Устанавливаем и настраиваем Docker и Docker Compose для работы</h3>
+                    </div>
+
+                    <p class="text-justify">
+                        </br>
+                        Установка Docker </br>
+                        </br>
+                        sudo apt update</br>
+                        </br>
+                        sudo apt install apt-transport-https ca-certificates curl software-properties-common</br>
+                        </br>
+                        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</br>
+                        </br>
+                        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null</br>
+                        </br>
+                        sudo apt update</br>
+                        </br>
+                        apt-cache policy docker-ce</br>
+                        </br>
+                        sudo apt install docker-ce</br>
+                        </br>
+                        sudo systemctl status docker</br>
+                        </br>
+                        --------------------------</br>
+                        </br>
+                        Настройка пользователя для Docker без sudo</br>
+                        </br>
+                        sudo usermod -aG docker ${USER}</br>
+                        </br>
+                        su - ${USER}</br>
+                        Вводим пароль пользователя</br>
+                        </br>
+                        Для проверки:</br>
+                        groups</br>
+                        </br>
+                    </p>
+                    <!-- /Project Description -->
+
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Тэги</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a>ssh</a></li>
+                            <li><a>ubuntu</a></li>
+                            <li><a>linux</a></li>
+                            <li><a>Docker</a></li>
+                            <li><a>Docker Compose</a></li>
+                            <li><a>sudo</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Technology -->
+
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>

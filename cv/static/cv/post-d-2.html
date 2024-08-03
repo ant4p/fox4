@@ -1,0 +1,71 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="/static/cv/post-d-1.html"><i class="lnr lnr-chevron-left"></i></a>
+                <a class="ajax-page-load" href="/static/cv/post-w-1.html"><i class="lnr lnr-chevron-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Использование зеркал для Docker</h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h3>Если докер снова перестал работать в РФ.</h3>
+                    </div>
+
+                    <p class="text-justify">
+                        </br>
+                        Настраиваем закачку образов с зеркала Google </br>
+                        </br>
+                        Подключаемся по ssh к серверу, затем:</br>
+                        </br>
+                        sudo vim /etc/docker/daemon.json</br>
+                        </br>
+                        Если файл пустой, то добавляем ключ registry-mirrors с зеркалом Google в конфигурацию.</br>
+                        </br>
+                        {</br>
+                        &nbsp; &nbsp;&nbsp;"registry-mirrors": [</br>
+                        &nbsp; &nbsp;&nbsp;"https://mirror.gcr.io"</br>
+                        &nbsp;&nbsp;]</br>
+                        }</br>
+                        </br>
+                        После чего - перезапускаем Docker:</br>
+                        sudo systemctl restart docker</br>
+                        </br>
+                        Как вариант можем добавить ещё зеркала сторонних компаний, но зеркала Google должно хватить.</br>
+                        </br>
+                    </p>
+                    <!-- /Project Description -->
+
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Тэги</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a>ssh</a></li>
+                            <li><a>ubuntu</a></li>
+                            <li><a>linux</a></li>
+                            <li><a>Docker</a></li>
+                            <li><a>Google</a></li>
+                            <li><a>mirror</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Technology -->
+
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>
