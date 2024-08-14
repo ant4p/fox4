@@ -5,11 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>fox4_cv</title>
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
-<!--    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />-->
-<!--    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />-->
-<!--    <meta name="author" content="lmpixels" />-->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="{% static 'cv/favicon.ico' %}">
 
 
 <!--    <link rel="stylesheet" href="{% static '/cv/css/reset.css'}" type="text/css">-->
@@ -41,7 +37,7 @@
           <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
               <div class="header-photo">
-                <img src="/static/cv/img/main_photo.jpg" alt="Alex Smith">
+                <img src="/static/cv/img/main_photo_.jpg" alt="Alex Smith">
               </div>
               <div class="header-titles">
                 <h2>Кузнецов Антон</h2>
@@ -161,11 +157,12 @@
                     <div class="col-xs-12 col-sm-7">
                       <p>Приветствую на моей CV странице.<br>
                           Здесь вы можете получить представление о моих навыках и роде деятельности.<br>
-                          Также вы можете скачать резюме в PDF или связаться со мной напрямую в Telegram или Whatsapp.<br>
+                          Также вы можете скачать резюме в PDF или связаться со мной напрямую в Telegram, Whatsapp<br>
+                          или по Skype.<br>
                           Являюсь Python разработчиком. Нравиться копаться в процессах и технологиях,
                           автоматизировать или оптимизировать любые бизнес-задачи.<br>
                       </p>
-sma                    </div>
+                 </div>
 
                     <div class="col-xs-12 col-sm-5">
                       <div class="info-list">
@@ -263,7 +260,7 @@ sma                    </div>
                               <i class="lnr lnr-cloud-check"></i>
                             </div><div class="ci-text">
                               <h4>Server setup</h4>
-                              <p>Настройка VPS/VDS. Безопасность подключения. SSH. Fail2ban.</p>
+                              <p>Настройка VPS/VDS. Физического сервера. Безопасность подключения. SSH. Fail2ban.</p>
                             </div>
                           </div>
                           <div class="info-block-w-icon">
@@ -304,7 +301,7 @@ sma                    </div>
                               <i class="lnr lnr-database"></i>
                             </div><div class="ci-text">
                               <h4>Databases setup</h4>
-                              <p>Настройка и конфигурирование реляционных баз данных. PosetgreSQL.</p>
+                              <p>Настройка и конфигурирование реляционных баз данных. PostgreSQL.</p>
                             </div>
                           </div>
                            <div class="info-block-w-icon">
@@ -652,6 +649,17 @@ sma                    </div>
 
                             <i class="far fa-file-alt"></i>
                             <h4 class="name">Банковские гарантии для бизнеса</h4>
+                            <span class="category">Web</span>
+                          </figure>
+
+                          <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="/static/cv/img/portfolio/cv/cv_fox4-main.jpg" alt="Media Project 1" title="" />
+                              <a href="/static/cv/portfolio-3.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">CV_fox4.ru</h4>
                             <span class="category">Web</span>
                           </figure>
 
